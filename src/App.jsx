@@ -1,17 +1,20 @@
 // import React, {useState} from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'/
-import './App.css'
+import "./App.css";
+import QRCodeGenerator from "./components/qr-code-generator";
 // import Accordion from './components/accordion'
 // import RandomColor from './components/random-color'
 // import StarRating from './components/star-rating'
 // import ImageSlider from './components/image-slider'
-import LoadMoreData from './components/load-more-button'
+// import LoadMoreData from './components/load-more-button'
+import TreeView from "./components/tree-view";
+import menus from "./components/tree-view/data";
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className='App'>
+    <div className="App">
       {/* Accordion Component */}
       {/* <Accordion/> */}
 
@@ -25,11 +28,15 @@ function App() {
       {/* <ImageSlider  url={'https://picsum.photos/v2/list'} limit={"10"} page={"1"} /> */}
 
       {/* Load more data */}
-      < LoadMoreData />
+      {/* < LoadMoreData /> */}
 
-      
+      {/* Tree view */}
+      {/* <TreeView menus={menus} /> */}
+
+      {/* Qr code generator */}
+      <QRCodeGenerator />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
